@@ -1,7 +1,13 @@
 @charset "UTF-8";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
-    background-image: url(imagens/wp12416934.png);
+    background-image: url(imagens/florenca.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -10,10 +16,14 @@ html {
 
 div.container {
     background-color: white;
+    border-radius: 20px;
     max-width: 1100px;
+    width: 1100px;
     position: relative;
     margin: 50px auto;
     padding: 20px 50px;
+    min-width: 320px;
+    max-width: 1100px;
 }
 
 header {
@@ -38,6 +48,10 @@ main {
     margin: 25px 0;
     border-top: 1px dashed rgba(255, 0, 0, 0.249);
     border-bottom: 1px dashed rgba(255, 0, 0, 0.249);
+}
+
+img {
+    max-width: 500px;
 }
 
 article {
@@ -69,4 +83,10 @@ section > li {
 footer > figure {
     font-weight: bold;
     text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    img {
+        max-width: 500px;
+    }
 }
